@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+<div id="estoque-container"></div>
+<script>
+  const caixa = new CaixaRegistradora();
+  // adicionar produtos ao estoque
+  caixa.adicionarProduto(1, 10.0, "Produto 1", 5);
+  caixa.adicionarProduto(2, 20.0, "Produto 2", 10);
+  // listar o estoque no HTML
+  caixa.listarEstoqueHtml();
+</script>
 </body>
 </html>
